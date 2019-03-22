@@ -1,7 +1,7 @@
 package gocn
 
 import (
-	"github.com/gocn/gocntool/github"
+	"github.com/songjiayang/gocntool/github"
 	"log"
 	"strings"
 	"time"

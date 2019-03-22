@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/gocn/gocntool/gocn"
+	"github.com/songjiayang/gocntool/gocn"
 	"io/ioutil"
 	"strings"
 )

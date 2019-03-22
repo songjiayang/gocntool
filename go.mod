@@ -1,1 +1,1 @@
-module github.com/gocn/gocntool
+module github.com/songjiayang/gocntool
