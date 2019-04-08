@@ -39,7 +39,13 @@ func (c *Checker) doCheck(link string) bool {
 	defer log.Println("after check:", link)
 
 	keys := strings.Split(link, "/")
-	kw := keys[len(keys)-1]
+	keyLen := len(keys)
+
+	kw := keys[keyLen-1]
+
+	if len(kw) < 8 && keyLen > 1 {
+		kw = keys[keyLen-2] + "/" + kw
+	}
 
 	isConflict, err := github.Search(kw)
 	if err != nil {
